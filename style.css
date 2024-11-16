@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    background: url('background.jpg') no-repeat center center/cover;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    color: black;
+    font-weight:bolder;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display:flex;
+    justify-content:space-evenly;
+    margin:0;
+}
+.hp{
+    padding:20px;
+}
+header nav ul li {
+    display: inline-block;
+    margin:1px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header nav ul li a {
+    color: purple;
+    font-family:cursive;
+    text-decoration: none;
+    padding: 1px 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+header nav ul li a:hover {
+    text-decoration:underline;
+    border-radius:5px ;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+}
+h1{
+    text-transform: uppercase;
+}
+h2{
+    color:white;
+    padding: 0px 0px 0px 0px;
+}
+
+h3 {
+    color:rgb(86, 5, 5);
+    padding:0px 50px 0px 0px;
+    text-decoration-line: underline;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding:30px;
+    background: url('wel.jpg')no-repeat center center/cover;
+    background-size: cover;
+    color:rgb(87, 243, 211);
+    font-weight:bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#home a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color:rgb(198, 194, 194);
+    color:purple;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#home a:hover {
+    background-color:violet;
+}
+/* About Section */
+#about {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+}
+.new{
+    display:inline;
+    justify-content:center;
+    border-radius: 10px;
+    max-height:125px;
+    width:125px;
+}
+.point {
+    padding: 0 20% 0 45%; /* Adjust padding to be more flexible */
+    text-align:start;
+    color: blue;
+}
+
+/* Media query for smaller devices like tablets */
+@media (max-width: 768px) {
+    .point {
+        padding: 0 5% 0 5%; /* Reduce padding on smaller screens */
+        text-align: left; /* Align text to the left for better readability on smaller screens */
+    }
+}
+
+/* Media query for very small devices like phones */
+@media (max-width: 480px) {
+    .point {
+        padding: 0 3% 0 3%; /* Further reduce padding for very small devices */
+        text-align: left; /* Keep text left-aligned */
+    }
+}
+/* Gallery Section */
+#gallery {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 300px;
+    max-height: 180px;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+}
+/* Details Section */
+#details{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center; 
+    padding:60px 30px;
+}
+#details h4{
+    color:green;
+    font-weight: bolder;
+}
+.event{
+background: url('blur.webp')no-repeat center center/cover;
+background-size:cover;
+}
+#details p{
+    color:black;
+    font-weight: bolder;
+}
+.event h3{
+color: #e71010;
+text-decoration:wavy;
+
+}
+#details a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color:rgb(198, 194, 194);
+    color:purple;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#details a:hover {
+    background-color:violet;
+}
+/* Contact Section */
+#contact{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#contact button {
+    padding: 10px;
+    background-color:rgb(215, 237, 246);
+    color: purple;
+    border: none;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact button:hover {
+    background-color:violet;
+}
+
+/* Footer Section */
+footer {
+    color: grey;
+    text-align: center;
+    padding: 20px;
+}
